@@ -83,6 +83,10 @@
     gap: 50px;
   }
 
+  .client-logos__track {
+    animation-duration: 40s;
+  }
+
   .client-logos__slide img {
     max-height: 160px;
     max-width: 260px;
