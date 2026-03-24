@@ -7,6 +7,8 @@ export default function Hero() {
         <img
           src="/assets/logos/bb brandworks - logo - weiss.png"
           alt="bb brandworks"
+          loading="eager"
+          fetchpriority="high"
         />
       </div>
 
@@ -23,7 +25,7 @@ export default function Hero() {
           </a>
         </div>
         <div className="hero__bottom-image">
-          <img src="/assets/images/silhouette-people-city.jpg" alt="City Silhouette" />
+          <img src="/assets/images/silhouette-people-city.jpg" alt="City Silhouette" loading="eager" fetchpriority="high" />
           <div className="hero__image-blur" />
           <div className="hero__image-fade" />
         </div>

@@ -21,6 +21,7 @@
   /* Optional: Fades out the edges for a smoother look */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  transform: translateZ(0); /* Create composite layer for container */
 }
 
 .client-logos__track {
@@ -28,6 +29,7 @@
   width: max-content;
   gap: 80px;
   animation: slide 100s linear infinite;
+  will-change: transform;
 }
 
 .client-logos__track:hover {
@@ -42,6 +44,9 @@
 
 .client-logos__slide {
   flex-shrink: 0;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
 .client-logos__slide img {
@@ -54,12 +59,12 @@
 
 @keyframes slide {
   0% {
-    transform: translateX(0);
+    transform: translate3d(0, 0, 0);
   }
 
   100% {
     /* Translate left by exactly one group width (-50% of the track minus half the gap) to seamlessly loop */
-    transform: translateX(calc(-50% - 40px));
+    transform: translate3d(calc(-50% - 40px), 0, 0);
   }
 }
 
@@ -85,11 +90,11 @@
 
   @keyframes slide {
     0% {
-      transform: translateX(0);
+      transform: translate3d(0, 0, 0);
     }
 
     100% {
-      transform: translateX(calc(-50% - 25px));
+      transform: translate3d(calc(-50% - 25px), 0, 0);
     }
   }
 }
