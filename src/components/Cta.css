@@ -1,0 +1,30 @@
+/* ===== CTA ===== */
+.cta {
+  padding: 120px 0;
+  background: rgb(240, 235, 216);
+  text-align: center;
+}
+
+.cta__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.cta__text {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  line-height: 1.4;
+  color: var(--color-black);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .cta {
+    padding: var(--section-padding-mobile);
+  }
+}

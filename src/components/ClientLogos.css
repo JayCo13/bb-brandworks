@@ -1,0 +1,95 @@
+/* ===== CLIENT LOGOS ===== */
+.client-logos {
+  padding: 50px 0;
+  background: var(--color-black);
+  color: var(--color-white);
+  overflow: hidden;
+}
+
+.client-logos__title {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(1rem, 5vw, 3rem);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.client-logos__slider-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  /* Optional: Fades out the edges for a smoother look */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+  -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.client-logos__track {
+  display: flex;
+  width: max-content;
+  gap: 80px;
+  animation: slide 100s linear infinite;
+}
+
+.client-logos__track:hover {
+  animation-play-state: paused;
+}
+
+.client-logos__group {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.client-logos__slide {
+  flex-shrink: 0;
+}
+
+.client-logos__slide img {
+  height: auto;
+  max-height: 260px;
+  width: auto;
+  max-width: 360px;
+  object-fit: contain;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    /* Translate left by exactly one group width (-50% of the track minus half the gap) to seamlessly loop */
+    transform: translateX(calc(-50% - 40px));
+  }
+}
+
+@media (max-width: 768px) {
+  .client-logos {
+    padding: var(--section-padding-mobile);
+  }
+
+  .client-logos__title {
+    margin-bottom: 50px;
+    font-size: clamp(1.5rem, 5vw, 3.5rem);
+  }
+
+  .client-logos__track,
+  .client-logos__group {
+    gap: 50px;
+  }
+
+  .client-logos__slide img {
+    max-height: 160px;
+    max-width: 260px;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+
+    100% {
+      transform: translateX(calc(-50% - 25px));
+    }
+  }
+}

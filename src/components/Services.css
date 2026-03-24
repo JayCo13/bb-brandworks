@@ -1,0 +1,90 @@
+/* ===== SERVICES ===== */
+.services {
+  padding: 140px 0;
+  background: #f0ebd8;
+}
+
+.services .section-title {
+  margin-bottom: 80px;
+}
+
+.services__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.service-card {
+  padding: 60px 40px;
+  background: var(--color-white);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  transition: var(--transition-slow);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.05);
+}
+
+.service-card__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 25px;
+}
+
+.service-card__desc {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  color: var(--color-gray-700);
+  line-height: 1.8;
+  margin-bottom: 30px;
+  flex: 1;
+  /* Pushes the button to the bottom if cards have uneven text */
+}
+
+.service-card__tagline {
+  font-family: var(--font-body);
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--color-black);
+  margin-bottom: 40px;
+}
+
+.service-card__cta-container {
+  margin-top: auto;
+}
+
+.service-card .btn--primary {
+  padding: 14px 30px;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 220px;
+}
+
+.service-card .btn--primary:hover {
+  transform: translateY(-8px);
+  background-color: rgb(240, 235, 216);
+}
+
+@media (max-width: 1024px) {
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .services {
+    padding: var(--section-padding-mobile);
+  }
+
+  .service-card {
+    padding: 40px 25px;
+  }
+}
