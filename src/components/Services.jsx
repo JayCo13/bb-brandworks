@@ -1,4 +1,5 @@
 import './Services.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const SERVICES = [
   {
@@ -19,13 +20,15 @@ const SERVICES = [
 ];
 
 export default function Services() {
+  const sectionRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <section className="services" id="services">
+    <section className="services" id="services" ref={sectionRef}>
       <div className="container">
-        <h2 className="section-title">SERVICES</h2>
+        <h2 className="section-title fade-in">SERVICES</h2>
         <div className="services__grid">
           {SERVICES.map((service, index) => (
-            <div className="service-card" key={index}>
+            <div className={`service-card fade-in delay-${index + 1}`} key={index}>
               <h3 className="service-card__title">{service.title}</h3>
               <p className="service-card__desc">{service.desc}</p>
               <p className="service-card__tagline">{service.tagline}</p>

@@ -1,9 +1,12 @@
 import './Hero.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 export default function Hero() {
+  const heroRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <section className="hero" id="hero">
-      <div className="hero__center-logo">
+    <section className="hero" id="hero" ref={heroRef}>
+      <div className="hero__center-logo scale-in">
         <img
           src="/assets/logos/bb brandworks - logo - weiss.png"
           alt="bb brandworks"
@@ -13,7 +16,7 @@ export default function Hero() {
       </div>
 
       <div className="hero__bottom">
-        <div className="hero__bottom-text">
+        <div className="hero__bottom-text fade-in-left delay-2">
           <p className="hero__subtitle">
             bb brandworks begleitet kleine und mittlere Unternehmen, die ohne eigene
             Marketingabteilung auskommen – aber nicht ohne klares Marketing. Als externe
@@ -24,7 +27,7 @@ export default function Hero() {
             ANFRAGEN
           </a>
         </div>
-        <div className="hero__bottom-image">
+        <div className="hero__bottom-image fade-in-right delay-3">
           <img src="/assets/images/silhouette-people-city.jpg" alt="City Silhouette" loading="eager" fetchpriority="high" />
           <div className="hero__image-blur" />
           <div className="hero__image-fade" />

@@ -73,15 +73,27 @@
 }
 
 @media (max-width: 1024px) {
+  .services {
+    padding: 100px 0;
+  }
+
   .services__grid {
-    grid-template-columns: 1fr;
-    gap: 30px;
+    gap: 15px;
+  }
+
+  .service-card {
+    padding: 40px 20px;
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .services {
     padding: var(--section-padding-mobile);
+  }
+
+  .services__grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
   }
 
   .service-card {

@@ -68,6 +68,20 @@
 }
 
 @media (max-width: 1024px) {
+  .about {
+    padding: 100px 0;
+  }
+
+  .about__layout {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about {
+    padding: var(--section-padding-mobile);
+  }
+
   .about__layout {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -76,11 +90,5 @@
   .about__left {
     position: relative;
     top: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .about {
-    padding: var(--section-padding-mobile);
   }
 }

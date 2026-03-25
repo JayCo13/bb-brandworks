@@ -1,4 +1,5 @@
 import './ClientLogos.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const LOGOS = [
   'Britta Berger - Referenz - AREA47.png',
@@ -18,13 +19,15 @@ const LOGOS = [
 ];
 
 export default function ClientLogos() {
+  const sectionRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <section className="client-logos" id="referenzen">
+    <section className="client-logos" id="referenzen" ref={sectionRef}>
       <div className="container">
-        <h2 className="client-logos__title">GEMEINSAM ERFOLGREICH</h2>
+        <h2 className="client-logos__title fade-in">GEMEINSAM ERFOLGREICH</h2>
       </div>
 
-      <div className="client-logos__slider-container">
+      <div className="client-logos__slider-container fade-in delay-2">
         <div className="client-logos__track">
           <div className="client-logos__group">
             {LOGOS.map((logo, index) => (

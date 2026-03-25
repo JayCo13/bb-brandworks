@@ -1,13 +1,16 @@
 import './About.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 export default function About() {
+  const sectionRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <section className="about" id="about">
+    <section className="about" id="about" ref={sectionRef}>
       <div className="container">
         <div className="about__layout">
           
           {/* Left Column: Giant Title */}
-          <div className="about__left">
+          <div className="about__left fade-in-left">
             <h2 className="about__title">
               WER<br />
               STECKT<br />
@@ -16,7 +19,7 @@ export default function About() {
           </div>
 
           {/* Right Column: Subtitle, Bio, Image */}
-          <div className="about__right">
+          <div className="about__right fade-in-right delay-2">
             <h3 className="about__subtitle">
               DIE KREATIVE POWER HINTER BB BRANDWORKS<br />
               BRITTA BERGER

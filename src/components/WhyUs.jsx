@@ -1,4 +1,5 @@
 import './WhyUs.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 const REASONS = [
   {
@@ -20,11 +21,13 @@ const REASONS = [
 ];
 
 export default function WhyUs() {
+  const sectionRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <section className="why-us" id="why-us">
+    <section className="why-us" id="why-us" ref={sectionRef}>
       <div className="container">
         <div className="why-us__layout">
-          <div className="why-us__left">
+          <div className="why-us__left fade-in-left">
             <h2 className="why-us__title">
               WARUM BB<br />
               BRANDWORKS?
@@ -32,7 +35,7 @@ export default function WhyUs() {
           </div>
           <div className="why-us__right">
             {REASONS.map((reason, i) => (
-              <div className="why-us__item" key={i}>
+              <div className={`why-us__item fade-in delay-${i + 1}`} key={i}>
                 <h3 className="why-us__item-title">{reason.title}</h3>
                 <p className="why-us__item-desc">{reason.desc}</p>
               </div>

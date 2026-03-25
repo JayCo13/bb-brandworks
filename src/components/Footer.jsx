@@ -1,12 +1,15 @@
 import './Footer.css';
+import useScrollReveal from '../hooks/useScrollReveal';
 
 export default function Footer() {
+  const footerRef = useScrollReveal({ threshold: 0.1 });
+
   return (
-    <footer className="footer" id="kontakt">
+    <footer className="footer" id="kontakt" ref={footerRef}>
       <div className="container">
         <div className="footer__top">
 
-          <div className="footer__left">
+          <div className="footer__left fade-in-left">
             <h2 className="footer__title">
               INDIVIDUELLE<br />
               BRANDING-<br />
@@ -17,7 +20,7 @@ export default function Footer() {
             </h2>
           </div>
 
-          <div className="footer__right">
+          <div className="footer__right fade-in-right delay-2">
             <div className="footer__block">
               <p>britta@bb-brandworks.com</p>
               <p>+43 664 5380151</p>
@@ -44,7 +47,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="footer__bottom-title">
+      <div className="footer__bottom-title scale-in">
         bb brandworks
       </div>
 

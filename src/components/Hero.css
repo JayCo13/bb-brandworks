@@ -2,47 +2,40 @@
 .hero {
   position: relative;
   width: 100%;
-  height: 100dvh;
-  min-height: 600px;
-  /* Safety net for tiny devices */
+  min-height: 100dvh;
   background: var(--color-black);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   overflow: hidden;
   padding-top: 60px;
-  /* Decreased padding as requested */
 }
 
 .hero__center-logo {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: 1;
-  min-height: 0;
-  /* Prevents flexbox overflow */
+  min-height: calc(100dvh - 60px);
   padding: 0 5%;
 }
 
 .hero__center-logo img {
   width: 100%;
-  max-width: 1000px;
+  max-width: 1600px;
   height: auto;
-  max-height: 45vh;
+  max-height: 100vh;
   object-fit: contain;
-  /* Reverses the baked-in transparent padding inside the image file */
-  transform: scale(1.1);
+  margin-bottom: -5vh;
 }
 
 .hero__bottom {
   display: flex;
   align-items: flex-end;
+  justify-content: space-between;
   position: relative;
-  height: 45vh;
-  /* Increased from 35vh to give image more room */
-  min-height: 250px;
-  margin-top: auto;
+  min-height: 0;
+  height: auto;
   width: 100%;
+  z-index: 1;
 }
 
 .hero__bottom-text {
@@ -55,8 +48,8 @@
 
 .hero__subtitle {
   font-family: var(--font-body);
-  font-weight: 300;
-  font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+  font-weight: 100;
+  font-size: clamp(0.55rem, 1vw, 0.8rem);
   line-height: 1.8;
   margin-bottom: 30px;
   color: var(--color-gray-300);
@@ -64,8 +57,6 @@
 }
 
 .hero__bottom-image {
-  position: absolute;
-  right: 0;
   bottom: 0;
   width: 40%;
   /* Extended further left */
@@ -76,8 +67,7 @@
 .hero__bottom-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  /* Enables it to fill the newly extended left space */
+  object-fit: contain;
   object-position: right bottom;
 }
 
@@ -101,31 +91,79 @@
   z-index: 2;
 }
 
-/* TABLET AND MOBILE */
-@media (max-width: 1024px) {
+/* LARGE SCREENS AND MONITORS (1080p+) */
+@media (min-width: 1440px) {
+  .hero__center-logo img {
+    max-width: 2000px;
+    max-height: 90vh;
+  }
+
   .hero__bottom-text {
-    width: 100%;
+    padding: 60px 10% 80px;
+  }
+
+  .hero__subtitle {
+    font-size: clamp(1rem, 1vw, 1rem);
+    max-width: 500px;
+    margin-bottom: 40px;
+  }
+
+  .hero__bottom-image {
+    width: 48%;
+  }
+}
+
+/* TABLET */
+@media (max-width: 1024px) and (min-width: 768px) {
+  .hero {
+    min-height: 0;
+    height: auto;
+  }
+
+  .hero__center-logo {
+    min-height: 0;
+    flex: none;
+    padding: 80px 5% 40px;
+  }
+
+  .hero__bottom {
+    min-height: 0;
+    height: auto;
+    padding-bottom: 40px;
+  }
+
+  .hero__bottom-text {
+    width: 50%;
     padding: 20px 5% 40px;
   }
 
   .hero__bottom-image {
-    width: 100%;
+    width: 55%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 100%;
   }
 
-  .hero__image-blur {
-    mask-image: linear-gradient(0deg, black 0%, transparent 40%);
-    -webkit-mask-image: linear-gradient(0deg, black 0%, transparent 40%);
-  }
-
-  .hero__image-fade {
-    background: linear-gradient(0deg, var(--color-black) 0%, transparent 60%, rgba(0, 0, 0, 0.4) 100%);
+  .hero__bottom-image img {
+    height: 100%;
+    object-position: right bottom;
   }
 }
 
-@media (max-width: 768px) {
+/* MOBILE ONLY */
+@media (max-width: 767px) {
   .hero {
-    min-height: 500px;
-    padding-top: 40px;
+    min-height: 0;
+    height: auto;
+    padding-top: 70px;
+  }
+
+  .hero__center-logo {
+    padding: 13px 5%;
+    align-items: center;
+    min-height: 0;
+    flex: none;
   }
 
   .hero__center-logo img {
@@ -133,17 +171,44 @@
   }
 
   .hero__bottom {
-    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    min-height: 0;
   }
 
   .hero__bottom-text {
-    padding: 20px 20px 30px;
+    padding: 0 20px 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero__bottom-image {
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+  }
+
+  .hero__bottom-image img {
+    height: auto;
+    object-position: center;
+    display: block;
+  }
+
+  .hero__image-blur,
+  .hero__image-fade {
+    display: none;
   }
 
   .hero__subtitle {
+    margin-top: 0;
     color: var(--color-white);
-    font-weight: 400;
-    text-shadow: 0 0 10px rgb(0, 0, 0);
-    margin-bottom: 20px;
+    font-weight: 300;
+    text-shadow: none;
+    margin-bottom: 30px;
   }
 }

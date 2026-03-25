@@ -20,12 +20,14 @@
 .why-us__title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(3rem, 6vw, 4.5rem);
+  font-size: clamp(1.8rem, 8vw, 4.5rem);
   text-transform: uppercase;
   letter-spacing: 0.02em;
   line-height: 0.95;
   color: var(--color-white);
   margin: 0;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
 }
 
 .why-us__right {
@@ -56,19 +58,27 @@
 }
 
 @media (max-width: 1024px) {
+  .why-us {
+    padding: 100px 0;
+  }
+
+  .why-us__layout {
+    gap: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .why-us {
+    padding: var(--section-padding-mobile);
+  }
+
   .why-us__layout {
     grid-template-columns: 1fr;
-    gap: 60px;
+    gap: 40px;
   }
 
   .why-us__left {
     position: relative;
     top: 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .why-us {
-    padding: var(--section-padding-mobile);
   }
 }
