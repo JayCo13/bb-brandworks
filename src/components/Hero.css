@@ -49,11 +49,17 @@
 .hero__subtitle {
   font-family: var(--font-body);
   font-weight: 100;
-  font-size: clamp(0.55rem, 1vw, 0.8rem);
-  line-height: 1.8;
+  font-size: clamp(0.5rem, 1.5vw, 1rem);
+  line-height: 1.4;
   margin-bottom: 30px;
-  color: var(--color-gray-300);
-  max-width: 480px;
+  color: white;
+  max-width: 450px;
+}
+
+.hero .btn--white {
+  padding: 2px 35px 0 35px;
+  font-size: 0.9rem;
+  min-height: 36px;
 }
 
 .hero__bottom-image {
@@ -103,8 +109,8 @@
   }
 
   .hero__subtitle {
-    font-size: clamp(1rem, 1vw, 1rem);
-    max-width: 500px;
+    font-size: clamp(0.8rem, 1.5vw, 1rem);
+    max-width: 600px;
     margin-bottom: 40px;
   }
 
@@ -210,5 +216,16 @@
     font-weight: 300;
     text-shadow: none;
     margin-bottom: 30px;
+    font-size: 1.15rem;
+    line-height: 1.6;
+    padding: 0 5%;
+  }
+
+  .hero .btn--white {
+    width: 100%;
+    max-width: 150px;
+    padding: 10px 10px;
+    font-size: 1rem;
+    min-height: auto;
   }
 }

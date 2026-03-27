@@ -39,7 +39,7 @@
   font-weight: 700;
   font-size: 0.8rem;
   text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: -0.02em;
   color: var(--color-white);
   position: relative;
   padding: 4px 0;
@@ -97,8 +97,21 @@
 }
 
 @media (max-width: 768px) {
+  .navbar {
+    padding: 15px 0 0;
+  }
+
   .navbar__inner {
     justify-content: flex-end;
+    padding-bottom: 15px;
+  }
+
+  .navbar.scrolled {
+    padding: 10px 0 0;
+  }
+
+  .navbar.scrolled .navbar__inner {
+    padding-bottom: 10px;
   }
 
   .navbar__links {

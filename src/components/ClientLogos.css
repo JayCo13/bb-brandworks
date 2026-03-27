@@ -11,7 +11,7 @@
   font-weight: 800;
   font-size: clamp(1rem, 5vw, 3rem);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: -0.02em;
 }
 
 .client-logos__slider-container {
@@ -21,7 +21,8 @@
   /* Optional: Fades out the edges for a smoother look */
   mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
   -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
-  transform: translateZ(0); /* Create composite layer for container */
+  transform: translateZ(0);
+  /* Create composite layer for container */
 }
 
 .client-logos__track {
@@ -75,7 +76,8 @@
 
   .client-logos__title {
     margin-bottom: 50px;
-    font-size: clamp(1.5rem, 5vw, 3.5rem);
+    font-size: clamp(2rem, 5vw, 4rem);
+    line-height: 1.2;
   }
 
   .client-logos__track,

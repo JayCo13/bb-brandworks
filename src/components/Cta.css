@@ -1,6 +1,6 @@
 /* ===== CTA ===== */
 .cta {
-  padding: 120px 0;
+  padding: 100px 0;
   background: rgb(240, 235, 216);
   text-align: center;
 }
@@ -23,8 +23,30 @@
   margin: 0;
 }
 
+.cta .btn--primary {
+  padding: 2px 35px 0 35px;
+  font-size: 0.9rem;
+  min-height: 36px;
+}
+
 @media (max-width: 768px) {
   .cta {
-    padding: var(--section-padding-mobile);
+    padding: 60px 0;
+  }
+
+  .cta__content {
+    gap: 30px;
+  }
+
+  .cta__text {
+    font-size: 1.5rem;
+    line-height: 1.35;
+    padding: 0 10px;
+  }
+
+  .cta .btn--primary {
+    font-size: 1.2rem;
+    padding: 6px 50px 5px 50px;
+    min-height: 55px;
   }
 }

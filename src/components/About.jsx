@@ -12,16 +12,14 @@ export default function About() {
           {/* Left Column: Giant Title */}
           <div className="about__left fade-in-left">
             <h2 className="about__title">
-              WER<br />
-              STECKT<br />
-              DAHINTER?
+              WER <br className="about__desktop-br" />STECKT<br />DAHINTER?
             </h2>
           </div>
 
           {/* Right Column: Subtitle, Bio, Image */}
           <div className="about__right fade-in-right delay-2">
             <h3 className="about__subtitle">
-              DIE KREATIVE POWER HINTER BB BRANDWORKS<br />
+              DIE KREATIVE POWER <br className="about__mobile-br" />HINTER BB BRANDWORKS<br />
               BRITTA BERGER
             </h3>
             

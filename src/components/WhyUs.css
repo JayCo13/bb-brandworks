@@ -20,9 +20,9 @@
 .why-us__title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(1.8rem, 8vw, 4.5rem);
+  font-size: clamp(2.1rem, 5vw, 3.1rem);
   text-transform: uppercase;
-  letter-spacing: 0.02em;
+  letter-spacing: -0.02em;
   line-height: 0.95;
   color: var(--color-white);
   margin: 0;
@@ -50,10 +50,10 @@
 .why-us__item-desc {
   font-family: var(--font-body);
   font-weight: 300;
-  font-size: 0.95rem;
-  line-height: 1.8;
+  font-size: 0.9rem;
+  line-height: 1.5;
   color: var(--color-gray-300);
-  max-width: 600px;
+  max-width: 480px;
   margin: 0;
 }
 
@@ -69,7 +69,7 @@
 
 @media (max-width: 767px) {
   .why-us {
-    padding: var(--section-padding-mobile);
+    padding: 100px 0;
   }
 
   .why-us__layout {
@@ -80,5 +80,18 @@
   .why-us__left {
     position: relative;
     top: 0;
+  }
+
+  .why-us__title {
+    font-size: 2.3rem;
+  }
+
+  .why-us__item-title {
+    font-size: 1.5rem;
+  }
+
+  .why-us__item-desc {
+    font-size: 1.4rem;
+    line-height: 1.6;
   }
 }
