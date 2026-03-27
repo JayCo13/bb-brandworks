@@ -73,8 +73,9 @@
 .navbar__hamburger span {
   display: block;
   width: 24px;
-  height: 2px;
-  background: var(--color-white);
+  height: 3px;
+  background: rgb(240, 235, 216);
+  border-radius: 4px;
   transition: var(--transition-base);
   transform-origin: center;
 }
