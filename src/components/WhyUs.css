@@ -40,7 +40,7 @@
 .why-us__item-title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: rgb(240, 235, 216);
@@ -50,7 +50,7 @@
 .why-us__item-desc {
   font-family: var(--font-body);
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1.1rem;
   line-height: 1.5;
   color: var(--color-gray-300);
   max-width: 480px;
@@ -69,6 +69,7 @@
   .why-us__layout {
     gap: 30px;
   }
+
 }
 
 @media (max-width: 767px) {
@@ -120,7 +121,8 @@
     max-width: none;
     display: block;
     object-fit: cover;
-    object-position: right center; /* Centers the crop vertically to balance top/bottom size */
+    object-position: right center;
+    /* Centers the crop vertically to balance top/bottom size */
     z-index: 0;
   }
 
