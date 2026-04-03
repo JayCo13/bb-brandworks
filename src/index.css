@@ -146,7 +146,7 @@ ul, ol {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 14px 36px;
+  padding: 12px 36px;
   font-family: var(--font-display);
   font-weight: 700;
   font-size: 1rem;

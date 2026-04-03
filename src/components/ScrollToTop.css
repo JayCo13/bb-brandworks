@@ -1,0 +1,48 @@
+/* ===== SCROLL TO TOP BUTTON ===== */
+
+.scroll-to-top {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  .scroll-to-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 1000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid rgb(240, 235, 216);
+    background: rgb(0, 0, 0);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: rgba(255, 255, 255, 0.85);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(20px);
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease,
+      border-color 0.3s ease, background 0.3s ease;
+  }
+
+  .scroll-to-top--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .scroll-to-top:active {
+    background: rgba(255, 255, 255, 0.15);
+    border-color: white;
+  }
+
+  .scroll-to-top svg {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+  }
+}

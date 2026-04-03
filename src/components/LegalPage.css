@@ -1,0 +1,458 @@
+/* ===== BASE ==== */
+.legal-page {
+  min-height: 100dvh;
+  background: var(--color-black);
+  color: var(--color-white);
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+/* ===== IMPRESSUM ===== */
+
+
+.impressum__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 40px;
+  color: var(--color-white);
+}
+
+.impressum__body {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.impressum__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.impressum__block {
+  padding: 0 10%;
+}
+
+.impressum__block p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.impressum__block strong {
+  font-weight: 700;
+  font-size: 18px;
+  color: var(--color-white);
+}
+
+.impressum__block a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.impressum__block a:hover {
+  color: var(--color-white);
+}
+
+.impressum__list {
+  list-style: none;
+  padding: 0;
+  padding-left: 15px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.impressum__a_link {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.impressum__list li {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  color: white;
+  padding-left: 15px;
+  position: relative;
+}
+
+.impressum__list li::before {
+  content: '•';
+  font-weight: 900;
+  margin-top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+
+/* ===== DATENSCHUTZ ===== */
+
+
+.datenschutz__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: clamp(1.75rem, 4.25vw, 3.25rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  color: var(--color-white);
+}
+
+.datenschutz__body {
+  width: 100%;
+}
+
+.datenschutz__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.datenschutz__block {
+  padding: 0 17%;
+  margin-bottom: 15px
+}
+
+.datenschutz__block p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.datenschutz__block p.datenschutz__p_margin {
+  margin-bottom: 20px;
+}
+
+.datenschutz__block strong {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.datenschutz__block a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.datenschutz__block a:hover {
+  color: var(--color-white);
+}
+
+.datenschutz__list {
+  list-style: none;
+  padding: 0;
+  padding-left: 15px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.datenschutz__list li {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.8rem;
+  line-height: 1.1;
+  color: white;
+  padding-left: 15px;
+  position: relative;
+}
+
+.datenschutz__list li::before {
+  content: '•';
+  font-weight: 900;
+  margin-top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+
+/* ===== AGB ===== */
+
+
+.agb__title {
+  font-family: var(--font-display);
+  font-weight: 900;
+  font-size: 54px;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 30px;
+  color: var(--color-white);
+}
+
+.agb__body {
+  width: 100%;
+}
+
+.agb__blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.agb__block {
+  padding: 0 17%;
+  margin-bottom: 15px
+}
+
+.agb__block p {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.83rem;
+  line-height: 1.5;
+  color: white;
+  margin: 0;
+}
+
+.agb__block p.agb__p_margin {
+  margin-bottom: 20px;
+}
+
+.agb__block strong {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: var(--color-white);
+}
+
+.agb__block a {
+  color: white;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transition: color 0.3s ease;
+  word-break: break-all;
+}
+
+.agb__block a:hover {
+  color: var(--color-white);
+}
+
+.agb__list {
+  list-style: none;
+  padding: 0;
+  padding-left: 15px;
+  margin: 30px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.agb__a_link {
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.agb__list li {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.95rem;
+  line-height: 1.1;
+  color: white;
+  padding-left: 15px;
+  position: relative;
+}
+
+.agb__list li::before {
+  content: '•';
+  font-weight: 900;
+  margin-top: 1px;
+  position: absolute;
+  left: 0;
+}
+
+
+/* ===== LEGAL FOOTER ===== */
+/* ===== LEGAL FOOTER ===== */
+.legal-footer {
+  background: var(--color-black);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 30px 0;
+}
+
+.legal-footer__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.legal-footer__links {
+  display: flex;
+  gap: 30px;
+}
+
+.legal-footer__links a {
+  font-family: var(--font-body);
+  font-weight: 300;
+  font-size: 0.85rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.legal-footer__links a:hover,
+.legal-footer__links a.active {
+  color: var(--color-white);
+}
+
+.legal-footer__copy {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  color: white;
+}
+
+
+.impressum-page {
+  min-height: auto;
+  padding-bottom: 50px;
+}
+
+@media (max-width: 1024px) {
+
+  /* Impressum iPad */
+  .impressum__title {
+    font-size: 3rem;
+  }
+
+  .impressum__block {
+    padding: 0 5%;
+  }
+
+  /* Datenschutz iPad */
+  .datenschutz__title {
+    font-size: 3rem;
+  }
+
+  .datenschutz__block {
+    padding: 0 5%;
+  }
+
+  /* AGB iPad */
+  .agb__title {
+    font-size: 3rem;
+  }
+
+  .agb__block {
+    padding: 0 5%;
+  }
+}
+
+@media (max-width: 767px) {
+  .legal-page {
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+
+  .impressum-page {
+    padding-bottom: 40px;
+  }
+
+  /* Impressum Mobile */
+  .impressum__title {
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  .impressum__block p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .impressum__block strong {
+    font-size: 20px;
+  }
+
+  .impressum__blocks {
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  /* Datenschutz Mobile */
+  .datenschutz__title {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+  }
+
+  .datenschutz__block p {
+    font-size: 19px;
+    padding: 0 10px;
+    line-height: 1.4;
+  }
+
+  .datenschutz__block p.datenschutz__p_margin {
+    margin-bottom: 30px;
+  }
+
+  .datenschutz__block strong {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .datenschutz__blocks {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .datenschutz__block {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  /* AGB Mobile */
+  .agb__title {
+    font-size: 27px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+  }
+
+  .agb__block p {
+    font-size: 19px;
+    line-height: 1.5;
+  }
+
+  .agb__block strong {
+    font-size: 22px;
+    line-height: 1;
+  }
+
+  .agb__block {
+    padding: 0;
+  }
+
+  .legal-footer__inner {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .legal-footer__links {
+    gap: 20px;
+  }
+}

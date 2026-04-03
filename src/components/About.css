@@ -62,9 +62,9 @@
 
 .about__image-wrapper img {
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 3 / 2;
   object-fit: cover;
-  object-position: center 20%;
+  object-position: center;
   display: block;
 }
 

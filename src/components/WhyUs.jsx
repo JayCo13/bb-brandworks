@@ -43,6 +43,11 @@ export default function WhyUs() {
           </div>
         </div>
       </div>
+      <div className="why-us__mobile-image fade-in delay-5">
+        <img src="/assets/images/silhouette-people-city.jpg" alt="City Silhouette" loading="lazy" />
+        <div className="why-us__image-blur" />
+        <div className="why-us__image-fade" />
+      </div>
     </section>
   );
 }

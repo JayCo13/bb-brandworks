@@ -24,9 +24,16 @@
 }
 
 .cta .btn--primary {
-  padding: 2px 35px 0 35px;
-  font-size: 0.9rem;
-  min-height: 36px;
+  width: 149px;
+  min-height: 35px;
+  padding: 0;
+  font-size: 14px;
+}
+
+.cta .btn--primary:hover {
+  background-color: rgb(240, 235, 216);
+  color: black;
+  border-color: white;
 }
 
 @media (max-width: 768px) {
@@ -46,7 +53,14 @@
 
   .cta .btn--primary {
     font-size: 1.2rem;
-    padding: 6px 50px 5px 50px;
+    padding: 0 50px;
     min-height: 55px;
+    width: auto;
+  }
+
+  .cta .btn--primary:hover {
+    background-color: rgb(240, 235, 216);
+    color: black;
+    border-color: white;
   }
 }

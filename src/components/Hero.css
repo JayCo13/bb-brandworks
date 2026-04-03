@@ -57,9 +57,10 @@
 }
 
 .hero .btn--white {
-  padding: 2px 35px 0 35px;
-  font-size: 0.9rem;
+  width: 150px;
   min-height: 36px;
+  font-size: 16px;
+  padding: 0;
 }
 
 .hero__bottom-image {
@@ -162,7 +163,7 @@
   .hero {
     min-height: 0;
     height: auto;
-    padding-top: 70px;
+    padding-top: 50px;
   }
 
   .hero__center-logo {
@@ -173,7 +174,7 @@
   }
 
   .hero__center-logo img {
-    transform: scale(1.1);
+    transform: scale(1);
   }
 
   .hero__bottom {
@@ -193,16 +194,7 @@
   }
 
   .hero__bottom-image {
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 0;
-  }
-
-  .hero__bottom-image img {
-    height: auto;
-    object-position: center;
-    display: block;
+    display: none;
   }
 
   .hero__image-blur,
@@ -213,19 +205,22 @@
   .hero__subtitle {
     margin-top: 0;
     color: var(--color-white);
-    font-weight: 300;
+    font-weight: 400;
     text-shadow: none;
     margin-bottom: 30px;
-    font-size: 1.15rem;
-    line-height: 1.6;
+    font-size: 1.19rem;
+    line-height: 1.5;
     padding: 0 5%;
   }
 
   .hero .btn--white {
+    margin: 50px 0;
     width: 100%;
-    max-width: 150px;
-    padding: 10px 10px;
-    font-size: 1rem;
+    max-width: 200px;
+    padding: 16px 25px 13px;
+    color: black;
+    /* More padding on top, less on bottom */
+    font-size: 1.2rem;
     min-height: auto;
   }
 }
