@@ -20,7 +20,7 @@
 .why-us__title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: clamp(2.1rem, 5vw, 3.1rem);
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
   text-transform: uppercase;
   letter-spacing: -0.02em;
   line-height: 0.95;
@@ -40,7 +40,7 @@
 .why-us__item-title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 1.2rem;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
   color: rgb(240, 235, 216);
@@ -50,7 +50,7 @@
 .why-us__item-desc {
   font-family: var(--font-body);
   font-weight: 300;
-  font-size: 1.1rem;
+  font-size: 16px;
   line-height: 1.5;
   color: var(--color-gray-300);
   max-width: 480px;
@@ -88,15 +88,15 @@
   }
 
   .why-us__title {
-    font-size: 2.3rem;
+    font-size: 2.0rem;
   }
 
   .why-us__item-title {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
   }
 
   .why-us__item-desc {
-    font-size: 1.4rem;
+    font-size: 1.05rem;
     line-height: 1.6;
   }
 

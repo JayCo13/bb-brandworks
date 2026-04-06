@@ -39,7 +39,7 @@
 .service-card__title {
   font-family: var(--font-display);
   font-weight: 900;
-  font-size: 21px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 0.02em;
   margin-bottom: 20px;
@@ -107,26 +107,20 @@
   .service-card__title {
     width: auto;
     height: auto;
-    font-size: clamp(0.95rem, 2.2vw, 1.4rem);
-    font-weight: 900;
     white-space: nowrap;
-    letter-spacing: -0.04em;
   }
 
   .service-card__desc {
     width: auto;
     height: auto;
-    font-size: 0.85rem;
   }
 
   .service-card__tagline {
     width: auto;
     height: auto;
-    font-size: 0.85rem;
   }
 
   .service-card .btn--primary {
-    font-size: 0.8rem;
     padding: 10px 20px;
     min-height: 42px;
   }
@@ -145,7 +139,7 @@
   }
 
   .services .section-title {
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     margin-bottom: 40px;
   }
 
@@ -167,7 +161,7 @@
   .service-card__title {
     width: auto;
     height: auto;
-    font-size: 1.6rem;
+    font-size: 1.35rem;
     white-space: normal;
     word-break: break-word;
     letter-spacing: 0.02em;
@@ -176,20 +170,20 @@
   .service-card__desc {
     width: auto;
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     line-height: 1.4;
   }
 
   .service-card__tagline {
     width: auto;
     height: auto;
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     color: black;
     padding-bottom: 10px;
   }
 
   .service-card .btn--primary {
-    font-size: 1.2rem;
+    font-size: 1.05rem;
     padding: 0 55px;
     min-height: 55px;
     width: auto;
