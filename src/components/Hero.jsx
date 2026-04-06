@@ -28,7 +28,7 @@ export default function Hero() {
           </a>
         </div>
         <div className="hero__bottom-image fade-in-right delay-3">
-          <img src="/assets/images/silhouette-people-city.jpg" alt="City Silhouette" loading="eager" fetchpriority="high" />
+          <img src="/assets/images/silhouette-people-city.webp" alt="City Silhouette" loading="eager" fetchpriority="high" />
           <div className="hero__image-blur" />
           <div className="hero__image-fade" />
         </div>

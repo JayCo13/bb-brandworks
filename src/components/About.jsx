@@ -36,8 +36,9 @@ export default function About() {
 
             <div className="about__image-wrapper">
               <img
-                src="/assets/images/Britta%201%20-%20Tisch.png"
+                src="/assets/images/britta-tisch.webp"
                 alt="Britta Berger"
+                loading="lazy"
               />
             </div>
           </div>
