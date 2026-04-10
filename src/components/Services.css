@@ -130,6 +130,28 @@
   .services__grid {
     margin: 0 -20px;
     width: calc(100% + 40px);
+    gap: 10px;
+  }
+
+  .service-card {
+    padding: 30px 10px;
+  }
+
+  .service-card__title {
+    white-space: normal;
+    font-size: 16px;
+    word-break: break-word;
+    letter-spacing: 0;
+  }
+
+  .service-card__desc {
+    font-size: 14px;
+    padding: 0 5px;
+  }
+  
+  .service-card .btn--primary {
+    font-size: 12px;
+    min-height: 38px;
   }
 }
 

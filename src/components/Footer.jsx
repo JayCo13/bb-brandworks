@@ -16,7 +16,7 @@ export default function Footer() {
               KONZEPTE UND<br />
               KOMMUNIKATIONS-<br />
               STRATEGIEN FÜR<br />
-              DEIN UNTERNEHMEN.
+              <span style={{ whiteSpace: "nowrap" }}>DEIN UNTERNEHMEN.</span>
             </h2>
           </div>
 
