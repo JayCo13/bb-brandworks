@@ -77,12 +77,22 @@ const LEGAL_CONTENT = {
 
         <div className="datenschutz__block">
           <p><strong>2. Cookies</strong></p>
+          <p className="datenschutz__p_margin">
+            Diese Website verwendet Cookies und ähnliche Technologien, um grundlegende Funktionen
+            der Website sicherzustellen, Inhalte und Anzeigen zu personalisieren sowie Zugriffe auf
+            meine Website zu analysieren. Dabei können Informationen auch an Drittanbieter
+            weitergegeben werden.
+          </p>
+          <p className="datenschutz__p_margin">
+            Beim erstmaligen Besuch der Website kannst du über das Cookie-Banner entscheiden, welche
+            Cookies gesetzt werden dürfen. Nicht notwendige Cookies werden erst nach deiner
+            ausdrücklichen Einwilligung aktiviert. Deine Auswahl kannst du jederzeit über die
+            Cookie-Einstellungen ändern oder widerrufen.
+          </p>
           <p>
-            Diese Website verwendet Cookies. Cookies sind kleine Textdateien, die auf deinem
-            Endgerät abgelegt werden und die dein Browser speichert. Sie dienen dazu, meine Website
-            nutzerfreundlicher zu gestalten. Du kannst das Speichern von Cookies durch eine
-            entsprechende Einstellung deines Browsers verhindern. Dies kann jedoch dazu führen, dass
-            nicht alle Funktionen einer Website vollumfänglich genutzt werden können.
+            Für die Verwaltung der eingesetzten Cookies und Einwilligungen nutze ich den Dienst
+            Cookiebot by Usercentrics. Dort findest du auch detaillierte Informationen zu den
+            eingesetzten Cookies, Speicherdauern und jeweiligen Zwecken.
           </p>
         </div>
 

@@ -9,7 +9,6 @@ import WhyUs from './components/WhyUs';
 import Footer from './components/Footer';
 import LegalPage from './components/LegalPage';
 import ScrollToTop from './components/ScrollToTop';
-import CookieBanner from './components/CookieBanner';
 
 export default function App() {
   const [legalPage, setLegalPage] = useState(null);
@@ -67,7 +66,6 @@ export default function App() {
       )}
       <Footer />
       <ScrollToTop />
-      <CookieBanner />
     </>
   );
 }
